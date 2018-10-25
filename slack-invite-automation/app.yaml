@@ -1,0 +1,15 @@
+apiVersion: 0.3.0
+environments:
+  default:
+    destination:
+      namespace: slack-invite-automation
+      server: https://8a4cc494-17a2-464d-8646-7d948ab64e88.k8s.ondigitalocean.com
+    k8sVersion: v1.11.1
+    path: default
+kind: ksonnet.io/app
+name: slack-invite-automation
+registries:
+  incubator:
+    protocol: github
+    uri: github.com/ksonnet/parts/tree/master/incubator
+version: 0.0.1
